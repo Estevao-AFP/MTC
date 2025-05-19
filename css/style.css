@@ -1,0 +1,116 @@
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    margin: 5vh 0 2vh 0;
+    background: radial-gradient(circle at 50% 50%, #00bf63, #00605b);
+    overflow: hidden;
+    font-family: 'Poppins';
+    font-style: normal;
+    color: white;
+
+}
+
+nav {
+    padding: 0vw 3vw 0vw 3vw;
+}
+
+nav ul {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    font-size: 45px;
+    width: 250px;
+    border-radius: 15px 35px 15px 35px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background: linear-gradient(90deg, #00bf63 0%, #00605b 100%);
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+
+section {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cartoon {
+    position: relative;
+    width: fit-content;
+}
+
+.refresh {
+    z-index: 1;
+    top: 10vh;
+    left: 0;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+section svg {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#textos {
+    top: 0vh;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.texto {
+    width: 50vw;
+    text-align: center;
+    font-size: 27px;
+}
+
+footer ul {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 3vw 0vw 3vw;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
